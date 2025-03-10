@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Achados SENAI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="tela-login d-flex justify-content-center align-items-center vh-100">
+    <!-- Wrapper do modal com posicionamento relativo -->
+    <div class="modal-wrapper position-relative w-100" style="max-width: 900px;">
+      <div class="login-container row shadow-lg rounded overflow-hidden w-100">
+        <!-- Área do Formulário (lado esquerdo com fundo branco) -->
+        <div class="formulario-login col-md-6 p-5">
+          <a href="#" class="voltar-link text-dark fs-4">&#8592;</a>
+          <h1 class="titulo-login fw-bold mt-3">Bem vindo (a) de Volta!</h1>
+          <p class="descricao-login text-muted">Por favor, insira seus dados.</p>
+          <form id="formLogin">
+            <div class="mb-3">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3 position-relative">
+              <input type="password" id="inputSenha" class="form-control" placeholder="Senha" required>
+              <button type="button" class="btn-olho btn btn-light position-absolute top-50 end-0 translate-middle-y me-2">👁</button>
+            </div>
+            <div class="text-end">
+              <a href="#" class="link-esqueci-senha text-decoration-none text-primary">Esqueceu a senha?</a>
+            </div>
+            <button type="submit" class="btn-login btn btn-primary w-100 mt-3">Sing in</button>
+            <p id="mensagemErro" class="mensagem-erro text-danger mt-2 text-center" style="display: none;">Email ou senha inválidos</p>
+          </form>
+          <div class="texto-ou text-center text-muted my-3">Ou continue</div>
+          <button class="btn-login-google btn btn-outline-dark w-100 d-flex align-items-center justify-content-center">
+            <img src="assets/icons8-google.svg" alt="Google" width="20" class="me-2"> Faça o Log in com o Google
+          </button>
+          <p class="texto-cadastro text-center mt-3">Não possui uma conta? <a href="cadastro.html" class="link-cadastro text-decoration-none text-primary">Cadastre-se</a></p>
+        </div>
+        <!-- Área da Ilustração (lado direito com degradê) -->
+        <div class="imagem-container col-md-6 d-flex align-items-center justify-content-center position-relative">
+          <img src="assets/Adobe Express - file.png" alt="Imagem Ilustrativa" class="imagem-login">
+        </div>
+      </div>
+      <!-- Logo posicionada no canto superior direito do modal -->
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script> 
+</body>
+</html>

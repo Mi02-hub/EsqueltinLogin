@@ -1,0 +1,139 @@
+/* Reset e fonte padrão */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #D7ECFF, #A8D8FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container da tela de login */
+  .tela-login {
+    width: 100%;
+  }
+  
+  /* Wrapper do modal para posicionamento relativo */
+  .modal-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Layout do modal */
+  .login-container {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Área do formulário (lado esquerdo) com fundo branco */
+  .formulario-login {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+  }
+  
+  /* Área da ilustração (lado direito) com degradê */
+  .imagem-container {
+    background: linear-gradient(180deg, #D7ECFF, #A8D8FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Logo posicionada no canto superior direito */
+  .logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+  }
+  
+  .logo img {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  /* Títulos e textos */
+  .titulo-login {
+    font-weight: 700;
+    color: #1B1F3B;
+  }
+  
+  .descricao-login {
+    color: #6c757d;
+  }
+  
+  /* Inputs */
+  .form-control {
+    height: 45px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  /* Botões */
+  .btn-login {
+    background-color: #5E9DF5;
+    border: none;
+    font-weight: 600;
+    height: 45px;
+    border-radius: 8px;
+  }
+  
+  .btn-login:hover {
+    background-color: #4A85E0;
+  }
+  
+  .btn-olho {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  /* Links */
+  .text-primary {
+    color: #5E9DF5 !important;
+  }
+  
+  .text-primary:hover {
+    text-decoration: underline;
+  }
+  
+  /* Botão do Google */
+  .btn-login-google {
+    border: 1px solid #ddd;
+    height: 45px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+  
+  .btn-login-google img {
+    margin-right: 8px;
+  }
+  
+  /* Imagem da ilustração */
+  .imagem-login {
+    max-width: 90%;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+      max-width: 100%;
+    }
+    .formulario-login {
+      width: 100%;
+    }
+    .imagem-container {
+      display: none;
+    }
+  }
+  
